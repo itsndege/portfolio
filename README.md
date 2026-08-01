@@ -1,16 +1,54 @@
-# React + Vite
+# Silas Ochieng Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio website showcasing my projects, technical skills, and background in software development.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://silasochieng.vercel.app
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive design
+- Smooth scrolling navigation
+- Scroll animations
+- Project showcase
+- Skills section
+- Contact section with CV download
 
-## Expanding the ESLint configuration
+## Built With
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- Tailwind CSS
+- JavaScript
+- React Icons
+- Motion
+
+## Projects
+
+### Duka Ledger
+A bookkeeping application for SMEs to track income, expenses, and financial records.
+
+### LearnHub
+A learning management platform for creating and accessing online courses.
+
+## Installation
+
+```bash
+git clone https://github.com/itsndege/portfolio.git
+```
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+
+## Author
+
+Silas Ochieng
+
+- GitHub: https://github.com/itsndege
+- LinkedIn: https://www.linkedin.com/in/silas-ochieng-11718agoro/
