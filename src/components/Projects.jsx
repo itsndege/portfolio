@@ -2,30 +2,56 @@ import projects from "../data/projectData";
 import { FaGithub } from "react-icons/fa";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import FadeInSection from "./FadeInSection";
+import { motion } from "motion/react";
 
 function Projects() {
     return (
         <FadeInSection>
         <section
             id="projects"
-            className=" scroll-mt-20 max-w-6xl mx-auto py-24 px-8"
+            className="max-w-6xl mx-auto py-24 px-8"
         >
-            <h2 className="text-4xl font-bold text-center mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-center mb-16">
                 My Projects
             </h2>
 
-            <p className="text-center text-slate-400 max-w-2xl mx-auto">
+            <p className="text-center text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
                 Here are some of the projects I've built while learning and
                 improving my software development skills.
             </p>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+            <motion.div
+    className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12"
+    initial="hidden"
+    whileInView="visible"
+    viewport={{ once: true }}
+    variants={{
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: 0.2,
+            },
+        },
+    }}
+>
 
                 {projects.map((project) => (
-                    <div
-                        key={project.title}
-                        className="group bg-slate-800 border border-slate-700 rounded-xl p-6 shadow-lg hover:border-cyan-500 hover:shadow-cyan-500/20 hover:-translate-y-2 transition-all duration-300 flex flex-col"
-                    >
+                    <motion.div
+                         key={project.title}
+                        variants={{
+
+                            hidden: {
+                                opacity: 0,
+                                y: 40,
+                            },
+                        visible: {
+                                 opacity: 1,
+                                 y: 0,
+                             },
+                        }}
+                            transition={{ duration: 0.5 }}
+                            className="group bg-slate-800 rounded-xl p-6 shadow-lg hover:shadow-cyan-500/20 hover:-translate-y-2 transition-all duration-300 flex flex-col"
+>
                         <div className="overflow-hidden rounded-lg mb-6">
                             <img
                                 src={project.image}
@@ -36,7 +62,7 @@ function Projects() {
                             {project.title}
                         </h3>
 
-                        <p  className="text-slate-400 leading-7 mb-6">
+                        <p  className="text-slate-400 leading-relaxed mb-6">
                             {project.description}
                         </p>
 
@@ -75,10 +101,10 @@ function Projects() {
 
                         </div>
 
-                    </div>
+                    </motion.div>
                 ))}
 
-            </div>
+            </motion.div>
 
         </section>
         </FadeInSection>

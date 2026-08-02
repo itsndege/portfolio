@@ -6,13 +6,13 @@ function Contact() {
         <FadeInSection>
         <section
             id="contact"
-            className="scroll-mt-20 max-w-6xl mx-auto py-24 px-8"
+            className="max-w-6xl mx-auto py-24 px-8"
         >
-            <h2 className="text-4xl font-bold text-center mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-center mb-16">
                 Contact
             </h2>
 
-            <p className="text-center text-slate-400 max-w-2xl mx-auto">
+            <p className="text-center text-slate-400 text-lg max-w-2xl mx-auto leading-relaxed">
                 I'm always open to discussing opportunities, collaborating on
                 projects, or simply connecting with other developers.
             </p>

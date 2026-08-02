@@ -6,8 +6,8 @@ function Skills() {
         <FadeInSection>
         <section 
             id="skills" 
-            className="scroll-mt-20 max-w-6xl mx-auto py-24 px-8">
-            <h2 className="text-4xl font-bold mb-16 text-center">
+            className="max-w-6xl mx-auto py-24 px-8">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-center mb-16">
                 Skills
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">

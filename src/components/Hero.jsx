@@ -4,23 +4,23 @@ import {MdComputer} from "react-icons/md";
 import profile from "../assets/images/profile.jpeg";
 
 
-function Hero({ name, title, location, university }) {
+function Hero({ name, location, university }) {
   return (
     <section
       id="home"
-      className="scroll-mt-20 max-w-6xl mx-auto flex items-center justify-between min-h-[85vh] px-8"
+      className="scroll-mt-32 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between min-h-[85vh] px-6 md:px-8 pt-16 md:pt-0"
     >
       {/* Left Side */}
-      <div className="max-w-2xl">
+      <div className="max-w-2xl text-center md:text-left">
         
 
-        <h1 className="text-7xl font-bold mb-6">
+        <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight">
           {name}
         </h1>
 
-        <h2 className="text-2xl text-slate-400 mt-4">
-          {title}
-        </h2>
+        <p className="text-xl md:text-2xl text-slate-400 leading-relaxed mt-6">
+    Frontend Developer • IT Graduate • Cybersecurity Enthusiast
+</p>
             <div className="flex flex-wrap gap-6 mt-6 text-slate-300">
 
     <div className="flex items-center gap-2">
@@ -40,11 +40,11 @@ function Hero({ name, title, location, university }) {
 
 </div>
 
-        <p className="text-slate-300 mt-6 leading-8">
+        <p className="mt-8 text-lg leading-relaxed text-slate-300">
           I'm an IT graduate from {university} building responsive web applications with React. I'm currently strengthening my skills in full-stack development and cybersecurity while working on projects that solve practical problems.
         </p>
 
-        <div className="mt-8 flex gap-4">
+        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <a
             href="#projects"
             className="bg-cyan-500 text-white px-6 py-3 rounded-lg hover:bg-cyan-600 transition"
@@ -63,7 +63,7 @@ function Hero({ name, title, location, university }) {
 
       {/* Right Side */}
       
-      <div className="hidden md:flex">
+      <div className="flex justify-center mt-10 md:mt-0">
   <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-cyan-500 shadow-xl">
     <img
       src={profile}
